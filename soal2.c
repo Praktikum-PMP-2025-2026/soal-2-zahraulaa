@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int transformasi(int i){
     if(i <= 1){
         return 1;
