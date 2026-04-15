@@ -13,17 +13,20 @@ int count(int n) {
     }
 
     else {
-       return 0;
+       return 1;
     }
 }
 
 int main() {
-    int T, n;
-    scanf("%d", &T);
+    int T;
+
+    scanf("%d", &T) != 1;
 
     for (int i = 0; i < T; i++) {
+        int n;
+        int langkah = count(n);
         scanf("%d", &n);
-        printf("LANGKAH %d\n", count(n));
+        printf("LANGKAH %d\n", langkah);
     }
     return 0;
 }
