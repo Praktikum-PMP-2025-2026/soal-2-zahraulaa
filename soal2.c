@@ -4,12 +4,14 @@ int count(int n) {
     if (n == 1) {
         return 0;
     }
-    if (n%2 == 0) {
-        return 1 + count(n/2);
-    } 
+    else{
+        if (n%2 == 0) {
+            return 1 + count(n/2);
+        } 
     
-    else {
-        return 1 + count((3*n)+1);
+        else {
+            return 1 + count((3*n)+1);
+        }
     }
 }
 
