@@ -8,12 +8,8 @@ int count(int n) {
         return 1 + count(n/2);
     } 
     
-    else if (n%3 == 0 && n>1) {
-        return 1 + count((3*n)+1);
-    }
-
     else {
-       return 1;
+        return 1 + count((3*n)+1);
     }
 }
 
